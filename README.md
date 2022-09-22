@@ -20,7 +20,9 @@ WHEN I view future weather conditions for that city
 THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
+
+URL: https://quinn9111.github.io/weatherdashboard/
+Github Repository: git@github.com:quinn9111/weatherdashboard.git
 ```
 
-URL
-Github Repository: 
+<img width="903" alt="image" src="https://user-images.githubusercontent.com/109930505/191645290-6d397df7-f0fb-4fbb-97ce-4ef0d80a336c.png">
