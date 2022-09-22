@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body class="flex-column min-100-vh">
+    <header class="hero">
+      <h1 class="app-title"></i> Weather Dashboard</h1>
+    </header>
+
+    <main class="flex-row justify-space-between">
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <h3 class="card-header text-uppercase font-weight-bold">Search By City</h3>
+          <form id="city-form" class="card-body">
+            <label class="form-label font-weight-bold" for="city">City</label>
+            <input
+              name="city"
+              id="city"
+              type="text"
+              autofocus="true"
+              class="form-input"
+            />
+            <button type="button" id="search">Search</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3 class="card-header text-uppercase font-weight-bold">Previously Searched Cities:</h3>
+          <div id="language-buttons" class="card-body">
+            <ul id="searchHistory" class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-12 col-md-8">
+        <h2 class="subtitle">
+          Weather Conditions: <span id="weather-search-term"></span>
+        </h2>
+        <div id="weather-container" class="list-group"></div>
+      </div>
+
+      <div id="weatherContent" class="col-9 pb-4 pt-4">
+        <div class="row pb-3 mr-2 ml-2">
+            <div id="cityDetail" class="col-12 border rounded px-3 py-3">
+            </div>
+        </div>
+
+        <div class="row pb-2 pt-1">
+            <div class="col-12 ml-2">
+                <h3>5-Day Forecast:</h3>
+            </div>
+        </div>
+
+        <div id="fiveDay" class="row pl-2">
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
